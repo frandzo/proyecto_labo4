@@ -1,17 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./paginas/Login";
-import Peliculas from "./paginas/Peliculas";
-import Pagina3 from "./paginas/Pagina3";
-import Menu from "./paginas/Menu";
+import PaginaLogin from "./paginas/PaginaLogin";
+import PaginaPeliculas from "./paginas/PaginaPeliculas";
+import PaginaSeleccion from "./paginas/PaginaSeleccion";
+import PaginaFunciones from "./paginas/PaginaFunciones";
+import PaginaReservas from "./paginas/PaginaReservas";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/peliculas" element={<Peliculas />} />
-        <Route path="/pagina3" element={<Pagina3 />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/" element={<PaginaLogin />} />
+        <Route path="/PaginaPeliculas" element={<PaginaPeliculas />} />
+        <Route path="/PaginaSeleccion" element={<PaginaSeleccion />} />
+        <Route path="/PaginaFunciones" element={<PaginaFunciones/>}/>
+        <Route path="/PaginaLogin" element={<PaginaLogin/>}/>
+        <Route path="/PaginaReservas" element={<PaginaReservas/>}/>
       </Routes>
     </Router>
   );

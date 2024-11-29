@@ -32,9 +32,9 @@ router.get("/", async (req, res) => {
 // Crear nueva tarea
 
 router.post("/", async (req, res) => {
-  const idusuario = 1;
-  const idfuncion = 1;
-  const idasiento = [27,28,29];
+  const idusuario = 7;
+  const idfuncion = 12;
+  const idasiento = [1,2,3];
   var idventa;
 
   const [ven] = await db.execute(
